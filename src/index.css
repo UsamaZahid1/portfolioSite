@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: borel;
+  src: url(./assets/borel.ttf);
+}
+@font-face {
+  font-family: impact;
+  src: url(./assets/impact.ttf);
+}
+@font-face {
+  font-family: bricolage1;
+  src: url(./assets/bricolage.ttf);
+  font-weight: 200;
+}@font-face {
+  font-family: bricolage;
+  src: url(./assets/bricolage.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: bricolage2;
+  src: url(./assets/bricolage.ttf);
+  font-weight: 600;
+}
+
+
+body{
+  background-color: #292929;
+}
