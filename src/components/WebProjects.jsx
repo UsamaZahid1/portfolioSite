@@ -7,21 +7,29 @@ import ProjectCard from './PojectCard'
 
 const WebProjects = () => {
   return (
-      <div className="min-h-screen px-12 py-20">
-          <h2 className="text-white text-5xl font-[bricolage2] mb-12 text-center">Web - Projects</h2>
+      <div className="min-h-screen px-6 md:px-12 py-16 md:py-20">
+          <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-[bricolage2] mb-12 text-center">
+              Web — Projects
+          </h2>
 
           <div className="space-y-10">
               {/* Row 1 */}
               <div className="flex flex-col lg:flex-row gap-8 border-b border-[#717171] pb-10">
-                  <div className="flex-[2] min-h-[580px]  border-r border-[#717171] pr-8">
-                      <ProjectCard image={KontestLanding} title="Kontest - Landing Page" subtitle="App Landing Page UX" />
+                  <div className="flex-[2] min-h-[300px] md:min-h-[580px] lg:border-r border-[#717171] lg:pr-8">
+                      <ProjectCard
+                          image={KontestLanding}
+                          title="Kontest - Web Landing Page"
+                          subtitle="Marketing Website Design"
+                      />
                   </div>
-                  <div className="flex-[1] min-h-[350px]">
-                      <ProjectCard image={KontestApp} title="Kontest - Gamified Fitness App" subtitle="Mobile App UX/UI" />
+                  <div className="flex-[1] min-h-[250px] md:min-h-[350px]">
+                      <ProjectCard
+                          image={KontestApp}
+                          title="Kontest Dashboard"
+                          subtitle="Admin Panel Web UI"
+                      />
                   </div>
               </div>
-
-            
           </div>
       </div>
   )
