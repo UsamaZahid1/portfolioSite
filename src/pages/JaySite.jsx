@@ -1,6 +1,6 @@
 import React from 'react'
 import CaseStudyTop from '../components/CaseStudyTop'
-import JaySiteimg from '../assets/JaySite.svg'
+import JaySiteimg from '../assets/JayASite.png'
 import JayLogo from '../assets/Kontest/JayLogo.png'
 
 const JaySite = () => {
