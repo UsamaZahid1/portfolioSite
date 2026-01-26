@@ -27,7 +27,7 @@ const Hero = () => {
                     <br />
                     <span className="text-[50px] sm:text-[60px] md:text-[80px] lg:text-[110px] font-[impact]">
                         <span className="text-[#BC7C48]"> React js</span>
-                        <span className="text-white"> </span>
+                        <span className="text-white"> Developer</span>
                     </span>
                 </h1>
 
