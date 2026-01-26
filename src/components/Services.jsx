@@ -3,7 +3,7 @@ import figmaa from '../assets/figma.svg'
 import pentool from '../assets/pentool.svg'
 import html from '../assets/html.svg'
 import css from '../assets/css.svg'
-import reacticon from '../assets/reacticon.svg'
+import reacticon from '../assets/reactIcon.svg'
 import tailwind from '../assets/tailwind.svg'
 import javascript from '../assets/javascriptIcon.svg'
 
