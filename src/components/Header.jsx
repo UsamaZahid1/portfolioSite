@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Header = ({ scrollTargets }) => {
+    
     const { aboutRef, workRef, servicesRef } = scrollTargets;
     const scrollToSection = (ref) => {
         ref.current?.scrollIntoView({ behavior: "smooth" });

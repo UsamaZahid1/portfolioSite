@@ -3,15 +3,16 @@ import Ielts from '../assets/Ielts.png'
 import JaySite from '../assets/JaySite.png'
 import KontestApp from '../assets/KontestApp.png'
 import KontestLanding from '../assets/KontestLanding.png'
-import ProjectCard from './PojectCard'
+
 import { useNavigate } from 'react-router-dom'
+import ProjectCard from '../components/PojectCard'
 
-const UIUXProjects = () => {
+const UIUXallProjects = () => {
     const navigate = useNavigate();
-
     return (
-        <div className="min-h-screen px-6 md:px-12 py-16 md:py-20">
-            <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-[bricolage2] mb-12 text-center">
+
+        <div className="min-h-screen px-6 md:px-12 py-16 md:py-20 ">
+            <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-[bricolage2] mb-20 mt-[40px] text-center">
                 <span className='text-[#BC7C48]'> UI/UX</span> Projects
             </h2>
 
@@ -42,9 +43,10 @@ const UIUXProjects = () => {
                     <div className="flex-[1] min-h-[250px] md:min-h-[550px] lg:border-r border-[#717171] lg:pr-8">
                         <ProjectCard
                             image={Ielts}
-                            title="IELTS Preparation Web App"
-                            subtitle="Education Web App UI"
-                            onClick={() => (navigate('/IeltsProjectPage'))}
+                            title="IELTS Academy App"
+                            subtitle="Education Mobile App UI"
+                            onClick={()=>navigate('/IeltsProjectPage')}
+                    
                         />
                     </div>
                     <div className="flex-[2] min-h-[250px] md:min-h-[400px]">
@@ -57,11 +59,9 @@ const UIUXProjects = () => {
                     </div>
                 </div>
             </div>
-            <div className='mt-[40px] flex justify-center'>
-                <a onClick={() => (navigate('/UIUXallProjects'))} className='font-[bricolage] bg-white text-black px-[34px] py-[14px] rounded-[10px] hover:bg-[#E9E9E9] hover:scale-130 cursor-pointer'>Show More</a>
-            </div>
+
         </div>
     )
 }
 
-export default UIUXProjects
+export default UIUXallProjects

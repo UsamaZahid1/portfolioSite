@@ -5,10 +5,11 @@ import html from '../assets/html.svg'
 import css from '../assets/css.svg'
 import reacticon from '../assets/reacticon.svg'
 import tailwind from '../assets/tailwind.svg'
+import javascript from '../assets/javascriptIcon.svg'
 
 const Services = () => {
     return (
-        <div className="min-h-screen px-6 sm:px-10 lg:px-16 py-16 ">
+        <div className="min-h-screen px-6 sm:px-10 lg:px-16 py-6 ">
             <h2 className="text-white text-4xl sm:text-5xl font-[bricolage2] mb-12 text-center">
                 Services
             </h2>
@@ -30,7 +31,7 @@ const Services = () => {
                 </div>
 
                 {/* Card 2 */}
-                <div className="flex-1 border border-[#5E5E5E] p-6 sm:p-8 rounded-2xl hover:bg-[#1a1a1a] transition-all duration-300">
+                <div className="flex-1 border border-[#5E5E5E] p-6 sm:p-8 rounded-2xl hover:bg-[#BC7C48]">
                     <h1 className="font-[bricolage] text-white text-2xl sm:text-3xl">
                         Web & Product Design
                     </h1>
@@ -45,7 +46,7 @@ const Services = () => {
             </div>
 
             {/* Bottom Card */}
-            <div className="mt-10 border border-[#5E5E5E] p-6 sm:p-8 rounded-2xl flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 hover:bg-[#1a1a1a] transition-all duration-300">
+            <div className="mt-10 border border-[#5E5E5E] p-6 sm:p-8 rounded-2xl flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 hover:bg-[#BC7C48] ">
                 <div>
                     <h1 className="font-[bricolage] text-white text-2xl sm:text-3xl">
                         Web Development
@@ -57,6 +58,7 @@ const Services = () => {
                 <div className="flex flex-wrap mt-4 lg:mt-0 justify-center lg:justify-end items-center">
                     <img src={html} alt="HTML" className="h-[40px] sm:h-[50px] px-4 border-r border-[#5E5E5E]" />
                     <img src={css} alt="CSS" className="h-[40px] sm:h-[50px] px-4 border-r border-[#5E5E5E]" />
+                    <img src={javascript} alt="CSS" className="h-[40px] sm:h-[40px] px-4 border-r border-[#5E5E5E]" />
                     <img src={tailwind} alt="Tailwind" className="h-[40px] sm:h-[50px] px-4 border-r border-[#5E5E5E]" />
                     <img src={reacticon} alt="React" className="h-[40px] sm:h-[50px] px-4" />
                 </div>

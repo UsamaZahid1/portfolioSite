@@ -3,7 +3,7 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div className="h-auto min-h-screen flex flex-col justify-center items-center px-6 md:px-[30px] py-[60px] relative text-center">
+        <div className="h-auto min-h-screen flex flex-col justify-center items-center px-6 md:px-[30px] py-[60px] relative">
 
             {/* Heading */}
             <h1 className="text-white font-[bricolage2] text-[40px] sm:text-[60px] md:text-[90px] z-10 leading-tight">

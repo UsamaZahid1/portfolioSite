@@ -1,10 +1,15 @@
 import React from 'react'
-import image from '../assets/usama.png';
+import image from '../assets/usama.webp';
+import useCanvasCursor from '../components/Cursor'
+
 
 const Hero = () => {
     return (
+        
+        
         <div className="w-full h-screen relative overflow-hidden flex flex-col md:flex-row items-center justify-center md:justify-start px-6 md:px-[50px]">
             {/* Mobile circular image */}
+            
             <div className="block md:hidden mt-8">
                 <img
                     src={image}
@@ -31,13 +36,13 @@ const Hero = () => {
                 </p>
 
                 <div className="mt-[30px] flex flex-col sm:flex-row gap-4 sm:gap-6 items-center sm:items-start justify-center md:justify-start">
-                    <a className="bg-white px-[40px] py-[14px] md:px-[48px] md:py-[18px] rounded-[10px] font-[bricolage2] text-[16px] text-[#1a1a1a]">
+                    {/* <a className="bg-white px-[40px] py-[14px] md:px-[48px] md:py-[18px] rounded-[10px] font-[bricolage2] text-[16px] text-[#1a1a1a]">
                         View My Work
-                    </a>
+                    </a> */}
                     <a
                         href="/UsamaReactResume.pdf"
                         target="_blank"
-                        className="border border-white text-white px-[40px] py-[14px] md:px-[48px] md:py-[18px] rounded-[10px] font-[bricolage2]"
+                        className="border bg-white border-white px-[40px] py-[14px] md:px-[48px] md:py-[18px] rounded-[10px] font-[bricolage2]"
                     >
                         Download Resume
                     </a>
@@ -49,11 +54,12 @@ const Hero = () => {
                 <img
                     src={image}
                     alt="Usama Portfolio"
-                    className="hidden md:block absolute right-0 top-0 h-full w-[60%] object-cover"
+                    className="hidden md:block absolute right-0 top-0 h-full w-[55%] object-cover"
                 />
             </div>
 
-            
+
+
         </div>
     );
 };

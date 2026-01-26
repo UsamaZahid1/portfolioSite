@@ -15,7 +15,7 @@ const Home = ({ scrollTargets }) => {
             <section ref={workRef}><UIUXProjects /></section>
             <section id='webProjects'><WebProjects /></section>
             <section ref={servicesRef}> <Services /></section>
-            <Footer />
+            <section id='footer'><Footer /></section>
 
         </div>
     )
