@@ -32,7 +32,6 @@ f82e843d4a6830f9c16595e491bc53e8c890dc8c src/App.jsx
 37ba969eea0f324c39771f976bfa216245275e1f src/assets
 d7f7cfb29d63895cddf1af1064cd6957a8060ae8 src/assets/Ielts.png
 0c750a0b4bf030ae4fe7700fc9f65d27ae784d83 src/assets/JaySite.png
-c4940738896b75aa0bbd813eca15a8e416243e89 src/assets/JaySite.svg
 dde090de1545282319ed05ecfa7ed02e62815820 src/assets/Kontest
 e85762efdb52db4479cfdd463083c669c0d05d92 src/assets/Kontest/Friends.svg
 1cff8835dbae1c4bc19bc3f077b75104f2391bdd src/assets/Kontest/Home.svg
