@@ -23,12 +23,12 @@ const Hero = () => {
                     <span className="text-[50px] sm:text-[60px] md:text-[80px] lg:text-[110px] font-[impact] text-white">I'm a</span>
                     <br />
                     <span className="text-[50px] sm:text-[60px] md:text-[80px] lg:text-[110px] font-[impact] text-[#BC7C48]">UI UX Designer</span>
-                    {/* <span className="text-[50px] sm:text-[60px] md:text-[80px] lg:text-[110px] font-[impact] text-white"> &</span>
+                    <span className="text-[50px] sm:text-[60px] md:text-[80px] lg:text-[110px] font-[impact] text-white"> &</span>
                     <br />
                     <span className="text-[50px] sm:text-[60px] md:text-[80px] lg:text-[110px] font-[impact]">
                         <span className="text-[#BC7C48]"> React js</span>
                         <span className="text-white"> Developer</span>
-                    </span> */}
+                    </span>
                 </h1>
 
                 <p className="font-[bricolage] text-white text-[16px] sm:text-[18px] mt-4">
