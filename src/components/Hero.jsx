@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import image from '../assets/usama.webp';
+import image from '../assets/seemu.png';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
@@ -75,7 +75,7 @@ const Hero = () => {
                                         <img
                                             src={image}
                                             alt="Usama - UI/UX Designer & Developer"
-                                            className="relative w-64 h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 object-cover rounded-xl lg:rounded-[1.75rem] z-10 transform transition-transform duration-500 group-hover:scale-[1.02]"
+                                            className="relative w-64 h-64 lg:w-80 lg:h-80 xl:w-100 xl:h-120 object-cover rounded-xl lg:rounded-[1.75rem] z-10 transform transition-transform duration-500 group-hover:scale-[1.02]"
                                         />
                                     </div>
 
@@ -101,7 +101,7 @@ const Hero = () => {
                                         <div className="flex items-center gap-3 mb-3">
                                             <div className="relative">
                                                 <div className="absolute inset-0 animate-ping rounded-full bg-[#BC7C48]/30" />
-                                                <div className="relative w-3 h-3 rounded-full bg-gradient-to-r from-[#BC7C48] to-[#FFA857]" />
+                                                <div className="relative w-3 h-3 rounded-full bg-gradient-to-r from-[#48bc4a] to-[#57ff62]" />
                                             </div>
                                             <h3 className="font-bold text-white text-lg">
                                                 Available for Opportunities
@@ -110,19 +110,19 @@ const Hero = () => {
 
                                         <div className="space-y-2">
                                             <div className="flex items-center gap-2">
-                                                <div className="w-2 h-2 rounded-full bg-[#BC7C48]" />
+                                                <div className="w-2 h-2 rounded-full bg-[#57ff62]" />
                                                 <span className="text-white/80 text-sm font-medium">
                                                     Full-time Positions
                                                 </span>
                                             </div>
                                             <div className="flex items-center gap-2">
-                                                <div className="w-2 h-2 rounded-full bg-[#FFA857]" />
+                                                <div className="w-2 h-2 rounded-full bg-[#57ff62]" />
                                                 <span className="text-white/80 text-sm font-medium">
                                                     Contract Work
                                                 </span>
                                             </div>
                                             <div className="flex items-center gap-2">
-                                                <div className="w-2 h-2 rounded-full bg-[#BC7C48]/60" />
+                                                <div className="w-2 h-2 rounded-full bg-[#57ff62]/60" />
                                                 <span className="text-white/80 text-sm font-medium">
                                                     Freelance Projects
                                                 </span>
@@ -151,7 +151,7 @@ const Hero = () => {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.6, delay: 0.5 }}
-                                className="mb-6"
+                                className="mb-0"
                             >
                                 <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/5 backdrop-blur-sm border border-white/10">
                                     <span className="text-[#BC7C48] font-semibold text-sm tracking-widest uppercase">
@@ -169,15 +169,15 @@ const Hero = () => {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.6, delay: 0.6 }}
-                                className="mb-6 lg:mb-8"
+                                className="mb-6 lg:mb-4"
                             >
                                 <span className="block font-bold bg-gradient-to-r from-white via-white to-white/90 bg-clip-text text-transparent text-5xl sm:text-6xl lg:text-7xl xl:text-8xl leading-tight">
                                     Crafting
                                 </span>
-                                <span className="block font-bold bg-gradient-to-r from-[#BC7C48] via-[#FFA857] to-[#BC7C48] bg-clip-text text-transparent text-5xl sm:text-6xl lg:text-7xl xl:text-8xl leading-tight animate-gradient-x">
+                                <span className="block font-bold bg-gradient-to-r from-[#BC7C48] via-[#FFA857] to-[#7e532f] bg-clip-text text-transparent text-5xl sm:text-6xl lg:text-7xl xl:text-8xl leading-tight animate-gradient-x">
                                     Digital Experiences
                                 </span>
-                                <span className="block font-bold text-white/80 text-2xl sm:text-3xl lg:text-4xl mt-4">
+                                <span className="block font-normal text-white/80 text-2xl sm:text-3xl lg:text-[] mt-2">
                                     That Drive Results
                                 </span>
                             </motion.h1>
@@ -187,7 +187,7 @@ const Hero = () => {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.6, delay: 0.7 }}
-                                className="text-lg sm:text-xl text-white/60 leading-relaxed mb-8 lg:mb-12 max-w-3xl font-light"
+                                className="text-lg sm:text-xl text-white/60 leading-relaxed mb-4 lg:mb-8 max-w-3xl font-light"
                             >
                                 I specialize in transforming complex challenges into intuitive,
                                 high-performance digital solutions. With expertise in both design
@@ -204,7 +204,7 @@ const Hero = () => {
                             >
                                 {[
                                     { value: "50+", label: "Projects" },
-                                    { value: "5+", label: "Years Experience" },
+                                    { value: "6+", label: "Years Experience" },
                                     { value: "100%", label: "Client Satisfaction" },
                                     { value: "∞", label: "Passion" }
                                 ].map((stat, index) => (
@@ -270,7 +270,7 @@ const Hero = () => {
                         transition={{ duration: 1, delay: 1.5 }}
                         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden lg:block"
                     >
-                       
+
                     </motion.div>
                 </div>
             </div>
