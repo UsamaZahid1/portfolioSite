@@ -46,7 +46,7 @@ const Hero = () => {
                 ))}
             </div>
 
-            <div className="relative z-10 min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12">
+            <div className="relative z-10 min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12 pt-20 lg:pt-12">
                 <div className="max-w-7xl mx-auto w-full">
                     <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-16 xl:gap-24">
 
@@ -55,32 +55,88 @@ const Hero = () => {
                             initial={{ opacity: 0, x: -50 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.8, ease: "easeOut" }}
-                            className="lg:w-2/5 flex justify-center lg:justify-start relative group"
+                            className="lg:w-2/5 flex flex-col items-center lg:items-center gap-6 relative"
                         >
-                            {/* Glow Effect */}
-                            <div className="absolute inset-0 bg-gradient-to-r from-[#BC7C48] via-transparent to-transparent opacity-0 group-hover:opacity-20 blur-3xl transition-opacity duration-500 -translate-x-1/4" />
+                            {/* Main Image Container with Top Padding */}
+                            <div className="relative group w-full flex justify-center">
+                                {/* Glow Effect */}
+                                <div className="absolute inset-0 bg-gradient-to-r from-[#BC7C48] via-transparent to-transparent opacity-0 group-hover:opacity-20 blur-3xl transition-opacity duration-500 -translate-x-1/4" />
 
-                            {/* 3D Card Effect Container */}
-                            <div className="relative">
-                                {/* Hover Effect Border */}
-                                <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-r from-[#BC7C48] via-transparent to-transparent opacity-0 group-hover:opacity-30 blur-xl transition-all duration-500" />
+                                {/* 3D Card Effect Container */}
+                                <div className="relative mt-8 lg:mt-16">
+                                    {/* Hover Effect Border */}
+                                    <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-r from-[#BC7C48] via-transparent to-transparent opacity-0 group-hover:opacity-30 blur-xl transition-all duration-500" />
 
-                                {/* Profile Image Container */}
-                                <div className="relative overflow-hidden rounded-2xl lg:rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/5 to-transparent backdrop-blur-sm p-1.5 shadow-2xl">
-                                    {/* Animated Gradient Border */}
-                                    <div className="absolute inset-0 rounded-[calc(2rem-4px)] bg-gradient-to-r from-transparent via-[#BC7C48]/20 to-transparent animate-gradient-shift" />
+                                    {/* Profile Image Container */}
+                                    <div className="relative overflow-hidden rounded-2xl lg:rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/5 to-transparent backdrop-blur-sm p-1.5 shadow-2xl">
+                                        {/* Animated Gradient Border */}
+                                        <div className="absolute inset-0 rounded-[calc(2rem-4px)] bg-gradient-to-r from-transparent via-[#BC7C48]/20 to-transparent animate-gradient-shift" />
 
-                                    <img
-                                        src={image}
-                                        alt="Usama - UI/UX Designer & Developer"
-                                        className="relative w-72 h-72 lg:w-96 lg:h-96 object-cover rounded-xl lg:rounded-[1.75rem] z-10 transform transition-transform duration-500 group-hover:scale-[1.02]"
-                                    />
+                                        <img
+                                            src={image}
+                                            alt="Usama - UI/UX Designer & Developer"
+                                            className="relative w-64 h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 object-cover rounded-xl lg:rounded-[1.75rem] z-10 transform transition-transform duration-500 group-hover:scale-[1.02]"
+                                        />
+                                    </div>
+
+                                    {/* Floating Elements */}
+                                    <div className="absolute -top-4 -left-4 w-20 h-20 border-t border-l border-[#BC7C48]/30 rounded-tl-2xl animate-pulse-slow" />
+                                    <div className="absolute -bottom-4 -right-4 w-20 h-20 border-b border-r border-[#BC7C48]/30 rounded-br-2xl animate-pulse-slow" />
                                 </div>
-
-                                {/* Floating Elements */}
-                                <div className="absolute -top-4 -left-4 w-20 h-20 border-t border-l border-[#BC7C48]/30 rounded-tl-2xl animate-pulse-slow" />
-                                <div className="absolute -bottom-4 -right-4 w-20 h-20 border-b border-r border-[#BC7C48]/30 rounded-br-2xl animate-pulse-slow" />
                             </div>
+
+                            {/* Available for Work Card - Below Image */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.6, delay: 0.4 }}
+                                className="w-full max-w-sm mx-auto lg:mx-0 mt-4 lg:mt-8"
+                            >
+                                <div className="relative group overflow-hidden rounded-2xl bg-gradient-to-br from-white/[0.05] to-white/[0.02] border border-white/10 backdrop-blur-sm p-6 hover:border-white/20 transition-all duration-300">
+                                    {/* Background Glow */}
+                                    <div className="absolute inset-0 bg-gradient-to-r from-[#BC7C48]/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                                    {/* Content */}
+                                    <div className="relative z-10">
+                                        <div className="flex items-center gap-3 mb-3">
+                                            <div className="relative">
+                                                <div className="absolute inset-0 animate-ping rounded-full bg-[#BC7C48]/30" />
+                                                <div className="relative w-3 h-3 rounded-full bg-gradient-to-r from-[#BC7C48] to-[#FFA857]" />
+                                            </div>
+                                            <h3 className="font-bold text-white text-lg">
+                                                Available for Opportunities
+                                            </h3>
+                                        </div>
+
+                                        <div className="space-y-2">
+                                            <div className="flex items-center gap-2">
+                                                <div className="w-2 h-2 rounded-full bg-[#BC7C48]" />
+                                                <span className="text-white/80 text-sm font-medium">
+                                                    Full-time Positions
+                                                </span>
+                                            </div>
+                                            <div className="flex items-center gap-2">
+                                                <div className="w-2 h-2 rounded-full bg-[#FFA857]" />
+                                                <span className="text-white/80 text-sm font-medium">
+                                                    Contract Work
+                                                </span>
+                                            </div>
+                                            <div className="flex items-center gap-2">
+                                                <div className="w-2 h-2 rounded-full bg-[#BC7C48]/60" />
+                                                <span className="text-white/80 text-sm font-medium">
+                                                    Freelance Projects
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div className="mt-4 pt-4 border-t border-white/10">
+                                            <p className="text-white/60 text-sm">
+                                                Open to collaborate on innovative projects and join forward-thinking teams.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </motion.div>
                         </motion.div>
 
                         {/* Right Column - Text Content */}
@@ -88,24 +144,8 @@ const Hero = () => {
                             initial={{ opacity: 0, x: 50 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-                            className="lg:w-3/5 text-center lg:text-left"
+                            className="lg:w-3/5 text-center lg:text-left mt-8 lg:mt-16"
                         >
-                            {/* Badge */}
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6, delay: 0.4 }}
-                                className="inline-flex items-center gap-3 mb-6 px-4 py-2.5 rounded-full bg-gradient-to-r from-white/5 to-white/[0.02] border border-white/10 backdrop-blur-sm"
-                            >
-                                <div className="relative">
-                                    <div className="absolute inset-0 animate-ping rounded-full bg-[#BC7C48]/30" />
-                                    <div className="relative w-2.5 h-2.5 rounded-full bg-gradient-to-r from-[#37c418] to-[#37c418]" />
-                                </div>
-                                <span className="font-medium bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent text-sm tracking-wide">
-                                    AVAILABLE FOR CONTRACT & FULL-TIME
-                                </span>
-                            </motion.div>
-
                             {/* Location & Role */}
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
