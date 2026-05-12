@@ -10,10 +10,16 @@ import { useNavigate } from 'react-router-dom'
 const WebProjects = () => {
     const navigate = useNavigate();
   return (
-      <div className="min-h-screen px-6 md:px-12 py-16 md:py-20">
-          <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-[bricolage2] mb-12 text-center">
-              <span className='text-[#BC7C48]'>Web</span>  Projects
-          </h2>
+      <div className="min-h-screen px-6 md:px-12 py-24">
+          <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-14">
+              <span className="inline-block text-[#BC7C48] font-[bricolage] uppercase tracking-[0.18em] text-xs mb-3">
+                  Designed &amp; built
+              </span>
+              <h2 className="text-white text-4xl sm:text-5xl md:text-6xl font-[bricolage2] tracking-tight">
+                  Frontend in production
+              </h2>
+          </div>
 
           <div className="space-y-10">
               {/* Row 1 */}
@@ -34,6 +40,7 @@ const WebProjects = () => {
                       />
                   </div>
               </div>
+          </div>
           </div>
       </div>
   )

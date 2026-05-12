@@ -7,60 +7,93 @@ import reacticon from '../assets/reactIcon.svg'
 import tailwind from '../assets/tailwind.svg'
 import javascript from '../assets/javascriptIcon.svg'
 
+const services = [
+    {
+        title: 'Product & SaaS Design',
+        body: 'End-to-end UX for web products — research, flows, IA, UI, and a design system your engineers can ship from.',
+        tools: [
+            { src: figmaa, alt: 'Figma' },
+            { src: pentool, alt: 'Design system' },
+        ],
+        deliverables: ['User flows', 'Wireframes', 'High-fidelity UI', 'Design system'],
+    },
+    {
+        title: 'Mobile UI Design',
+        body: 'Native-feeling mobile UX for iOS and Android — designed for thumbs, low light, and short attention spans.',
+        tools: [
+            { src: figmaa, alt: 'Figma' },
+            { src: pentool, alt: 'Prototyping' },
+        ],
+        deliverables: ['App flows', 'Component library', 'Interaction specs', 'Prototypes'],
+    },
+    {
+        title: 'Frontend Development',
+        body: 'I build the design in React + Tailwind. Closes the design–engineering gap and gets working UI in front of users faster.',
+        tools: [
+            { src: reacticon, alt: 'React' },
+            { src: tailwind, alt: 'Tailwind' },
+            { src: javascript, alt: 'JavaScript' },
+            { src: html, alt: 'HTML' },
+            { src: css, alt: 'CSS' },
+        ],
+        deliverables: ['Marketing sites', 'Component libraries', 'Production frontends'],
+    },
+]
+
 const Services = () => {
     return (
-        <div className="min-h-screen px-6 sm:px-10 lg:px-16 py-6 ">
-            <h2 className="text-white text-4xl sm:text-5xl font-[bricolage2] mb-12 text-center">
-                Services
-            </h2>
-
-            {/* Top Services Row */}
-            <div className="flex flex-col lg:flex-row justify-between gap-8">
-                {/* Card 1 */}
-                <div className="flex-1 border border-[#5E5E5E] p-6 sm:p-8 rounded-2xl hover:bg-[#BC7C48] transition-all duration-300">
-                    <h1 className="font-[bricolage] text-white text-2xl sm:text-3xl">
-                        Mobile UI Design
-                    </h1>
-                    <p className="font-[bricolage1] text-gray-300 mt-6 text-[16px] sm:text-[18px] leading-relaxed">
-                        Designing intuitive, high performing mobile experiences.
-                    </p>
-                    <div className="flex mt-8 items-center">
-                        <img src={figmaa} alt="Figma" className="h-[40px] sm:h-[50px] pr-6 border-r border-[#5E5E5E]" />
-                        <img src={pentool} alt="Pen Tool" className="h-[40px] sm:h-[50px] px-6" />
-                    </div>
+        <div className="min-h-screen px-6 md:px-12 py-24">
+            <div className="max-w-7xl mx-auto">
+                <div className="text-center mb-14">
+                    <span className="inline-block text-[#BC7C48] font-[bricolage] uppercase tracking-[0.18em] text-xs mb-3">
+                        What I do
+                    </span>
+                    <h2 className="text-white font-[bricolage2] text-4xl sm:text-5xl md:text-6xl tracking-tight">
+                        Design that ships, code that holds.
+                    </h2>
                 </div>
 
-                {/* Card 2 */}
-                <div className="flex-1 border border-[#5E5E5E] p-6 sm:p-8 rounded-2xl hover:bg-[#BC7C48]">
-                    <h1 className="font-[bricolage] text-white text-2xl sm:text-3xl">
-                        Web & Product Design
-                    </h1>
-                    <p className="font-[bricolage1] text-gray-300 mt-6 text-[16px] sm:text-[18px] leading-relaxed">
-                        Impactful, conversion-focused web experiences.
-                    </p>
-                    <div className="flex mt-8 items-center">
-                        <img src={figmaa} alt="Figma" className="h-[40px] sm:h-[50px] pr-6 border-r border-[#5E5E5E]" />
-                        <img src={pentool} alt="Pen Tool" className="h-[40px] sm:h-[50px] px-6" />
-                    </div>
-                </div>
-            </div>
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+                    {services.map((s) => (
+                        <div
+                            key={s.title}
+                            className="group relative rounded-2xl border border-white/10 bg-white/[0.02] p-7 hover:bg-white/[0.04] hover:border-white/20 transition-all duration-300 flex flex-col"
+                        >
+                            <h3 className="font-[bricolage2] text-white text-2xl tracking-tight">
+                                {s.title}
+                            </h3>
+                            <p className="font-[bricolage1] text-white/65 mt-3 text-[15px] leading-[1.6]">
+                                {s.body}
+                            </p>
 
-            {/* Bottom Card */}
-            <div className="mt-10 border border-[#5E5E5E] p-6 sm:p-8 rounded-2xl flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 hover:bg-[#BC7C48] ">
-                <div>
-                    <h1 className="font-[bricolage] text-white text-2xl sm:text-3xl">
-                        Web Development
-                    </h1>
-                    <p className="font-[bricolage1] text-gray-300 mt-6 text-[16px] sm:text-[18px] leading-relaxed">
-                        Turning designs into live, interactive products.
-                    </p>
-                </div>
-                <div className="flex flex-wrap mt-4 lg:mt-0 justify-center lg:justify-end items-center">
-                    <img src={html} alt="HTML" className="h-[40px] sm:h-[50px] px-4 border-r border-[#5E5E5E]" />
-                    <img src={css} alt="CSS" className="h-[40px] sm:h-[50px] px-4 border-r border-[#5E5E5E]" />
-                    <img src={javascript} alt="CSS" className="h-[40px] sm:h-[40px] px-4 border-r border-[#5E5E5E]" />
-                    <img src={tailwind} alt="Tailwind" className="h-[40px] sm:h-[50px] px-4 border-r border-[#5E5E5E]" />
-                    <img src={reacticon} alt="React" className="h-[40px] sm:h-[50px] px-4" />
+                            <div className="mt-6">
+                                <span className="text-white/40 font-[bricolage1] text-[11px] uppercase tracking-[0.15em]">
+                                    Deliverables
+                                </span>
+                                <ul className="mt-2 flex flex-wrap gap-1.5">
+                                    {s.deliverables.map((d) => (
+                                        <li
+                                            key={d}
+                                            className="text-[12px] font-[bricolage1] text-white/70 border border-white/10 rounded-full px-2.5 py-1"
+                                        >
+                                            {d}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+
+                            <div className="mt-auto pt-6 flex items-center gap-3 border-t border-white/[0.06]">
+                                {s.tools.map((t) => (
+                                    <img
+                                        key={t.alt}
+                                        src={t.src}
+                                        alt={t.alt}
+                                        className="h-7 w-7 opacity-90"
+                                    />
+                                ))}
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>

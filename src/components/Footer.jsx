@@ -1,30 +1,62 @@
 import React from 'react'
 
-const Footer = () => {
-  return (
-    <footer className=' py-[55px] flex flex-col items-center relative overflow-hidden'>
-      {/* Background grid */}
-      <div className='absolute inset-0 bg-[linear-gradient(transparent_95%,rgba(255,255,255,0.05)_95%),linear-gradient(90deg,transparent_95%,rgba(255,255,255,0.05)_100%)] bg-[length:80px_80px] pointer-events-auto'></div>
+const Contact = () => {
+    return (
+        <>
+            <section id="contact" className="contact">
+                <div className="orb"></div>
+                <div className="wrap">
+                    <div className="contact-grid">
+                        <div>
+                            <h2>Let's<br />have a <em>chat</em>.</h2>
+                        </div>
+                        <div className="contact-side">
+                            <a className="contact-email" href="mailto:hello@usamadesign.com?subject=Opportunity%20at%20your%20company">
+                                hello@usamadesign.com <span className="arr">→</span>
+                            </a>
 
-      <h1 className='font-[bricolage2] text-[64px] text-white relative z-10'>Let's Work</h1>
+                            <a className="resume-cta" href="/ResumeUIUX.pdf" target="_blank" rel="noopener noreferrer">
+                                <span className="ic">PDF</span>
+                                <span className="t">
+                                    <small>Download · CV</small>
+                                    <strong>Full CV — May 2026</strong>
+                                </span>
+                                <span className="arr">↓</span>
+                            </a>
 
-      <a className='font-[bricolage1] mt-[30px] text-white text-[20px] border border-[#4D4D4D] bg-[#292929] rounded-[30px] px-[24px] py-[12px] relative z-10'>
-        hello@usamadesign.com
-      </a>
+                            <div className="contact-meta">
+                                <div><b>Response time</b>Within 24 hrs · Mon–Fri</div>
+                                <div><b>Notice period</b>4 weeks</div>
+                                <div><b>Time zone</b>UTC +05 · Lahore</div>
+                                <div><b>Work auth</b>Open · Visa welcome</div>
+                            </div>
 
-      <div className='flex items-center relative z-10 gap-4  mt-[46px] '>
-        <a href='https://www.instagram.com/usamauxdev/' target="_blank" className='w-16 h-16 rounded-full bg-[#424242] flex items-center justify-center'>
-          <i className="ri-instagram-line text-white text-[30px]"></i>
-        </a>
-        <a href='https://www.linkedin.com/in/usamadesign/' target="_blank" className='w-16 h-16 rounded-full  bg-[#424242] flex items-center justify-center'>
-          <i className="ri-linkedin-fill text-white text-[30px] "></i>
-        </a>
-        <a href='https://dribbble.com/uzahid231' target="_blank" className='w-16 h-16 rounded-full bg-[#424242] flex items-center justify-center'>
-          <i className="ri-dribbble-line text-white text-[30px]"></i>
-        </a>
-      </div>
-    </footer>
-  )
+                            <div className="socials">
+                                <a href="https://www.linkedin.com/in/usamadesign/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                                <a href="https://dribbble.com/uzahid231" target="_blank" rel="noopener noreferrer">Dribbble ↗</a>
+                                <a href="https://www.instagram.com/usamauxdev/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                </div>
+            </section>
+
+            <footer className="site-foot">
+                <div className="foot-inner">
+                    <span>© {new Date().getFullYear()} Usama Zahid · All rights reserved</span>
+                    <div className="foot-links">
+                        <a href="#top">Top ↑</a>
+                        <a href="#work">My Work</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <span>Designed &amp; built by Usama</span>
+                </div>
+            </footer>
+        </>
+    )
 }
 
-export default Footer
+export default Contact
