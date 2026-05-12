@@ -3,7 +3,7 @@ import React from 'react'
 const cards = [
     {
         title: 'Product & UX',
-        num: 'Core · 01 / 04',
+        num: 'Core · 01 / 05',
         size: 'lg',
         rows: [
             ['User flows & IA', 92, '6y'],
@@ -15,17 +15,19 @@ const cards = [
     },
     {
         title: 'Visual & UI',
-        num: 'Core · 02 / 04',
+        num: 'Core · 02 / 05',
+        size: 'lg',
         rows: [
             ['UI design systems', 90, '5y'],
             ['Type & layout', 92, '6y'],
-            ['Iconography', 80, '5y'],
             ['Mobile UI', 94, '6y'],
+            ['Iconography', 80, '5y'],
+            ['Brand identity', 84, '5y'],
         ],
     },
     {
         title: 'Tools',
-        num: 'Daily · 03 / 04',
+        num: 'Daily · 03 / 05',
         rows: [
             ['Figma · components, variants', 98, '6y'],
             ['Adobe XD · Sketch', 78, '4y'],
@@ -35,7 +37,7 @@ const cards = [
     },
     {
         title: 'Engineering literacy',
-        num: 'Plus · 04 / 04',
+        num: 'Plus · 04 / 05',
         rows: [
             ['HTML / CSS / Tailwind', 90, '5y'],
             ['React · component APIs', 78, '3y'],
@@ -45,8 +47,7 @@ const cards = [
     },
     {
         title: 'Soft skills',
-        num: 'Soft · bonus',
-        size: 'lg',
+        num: 'Soft · 05 / 05',
         rows: [
             ['Cross-functional collaboration', 88, '6y'],
             ['Client communication', 90, '6y'],

@@ -8,11 +8,11 @@ const Hero = () => {
             <div className="wrap">
                 <div className="hero-grid">
                     <aside className="hero-meta">
-                        <div className="row"><span>Index</span><b>§ 00 / Hero</b></div>
+                       
                         <div className="row"><span>Role sought</span><b>Senior / Lead PD</b></div>
                         <div className="row"><span>Location</span><b>Lahore — Remote</b></div>
-                        <div className="row"><span>Notice period</span><b>4 weeks</b></div>
-                        <div className="row"><span>Work auth</span><b>Open · Visa OK</b></div>
+                        <div className="row"><span>Notice period</span><b>Immediately</b></div>
+                    
                     </aside>
 
                     <h1 className="hero-title">
